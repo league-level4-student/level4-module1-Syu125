@@ -18,7 +18,7 @@ public class CustomArrayListTest {
 		if(list.get(1) != 1) fail("list.get(1) returning improper value.");
 		if(list.get(2) != 206) fail("list.get(2) returning improper value.");
 	}
-	
+
 	@Test
 	public void testSet() {
 		ArrayList<String> list = new ArrayList<String>();
@@ -138,4 +138,5 @@ public class CustomArrayListTest {
 		
 		assertTrue(list.size() == 3);
 	}
-}
+	}
+
