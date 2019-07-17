@@ -11,4 +11,51 @@ public class _00_Horoscope {
 	
 	// 3. Make a main method to test your method
 	
+
+public static void main(String[] args) {
+	Zodiac z = Zodiac.CAPRICORN;
+	change(z);
+}
+static void change(Zodiac z) {
+	switch(z) {
+	case ARIES:
+		JOptionPane.showMessageDialog(null, "Element: Fire");
+		break;
+	case TAURUS:
+		JOptionPane.showMessageDialog(null, "Element: Earth");
+		break;
+	case GEMINI:
+		JOptionPane.showMessageDialog(null, "Element: Air");
+		break;
+	case CANCER:
+		JOptionPane.showMessageDialog(null, "Element: Water");
+		break;
+	case LEO:
+		JOptionPane.showMessageDialog(null, "Element: Fire");
+		break;
+	case VIRGO:
+		JOptionPane.showMessageDialog(null, "Element: Earth");
+		break;
+	case LIBRA:
+		JOptionPane.showMessageDialog(null, "Element: Air");
+		break;
+	case SCORPIO:
+		JOptionPane.showMessageDialog(null, "Element: Water");
+		break;
+	case SAGITTARIUS:
+		JOptionPane.showMessageDialog(null, "Element: Fire");
+		break;
+	case CAPRICORN:
+		JOptionPane.showMessageDialog(null, "Element: Earth");
+		break;
+	case AQUARIUS:
+		JOptionPane.showMessageDialog(null, "Element: Air");
+		break;
+	case PISCES:
+		JOptionPane.showMessageDialog(null, "Element: Water");
+		break;
+		
+	}
+	
+}
 }
