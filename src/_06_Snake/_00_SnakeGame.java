@@ -152,8 +152,8 @@ public class _00_SnakeGame implements ActionListener, KeyListener {
 		//   use the snake's isLocationOnSnake method to make sure you don't put the food on the snake
 		foodLocation = l;
 		if(snake.isLocationOnSnake(foodLocation)) {
-			xC = r.nextInt(10);
-			yC = r.nextInt(10);
+			xC = r.nextInt(15);
+			yC = r.nextInt(12);
 			l = new Location(xC,yC);
 		}
 	}
@@ -206,8 +206,8 @@ public class _00_SnakeGame implements ActionListener, KeyListener {
 			if(snake.getHeadLocation().y == foodLocation.y) {
 				System.out.println("same");
 			snake.feed();
-			xC = r.nextInt(10);
-			yC = r.nextInt(10);
+			xC = r.nextInt(15);
+			yC = r.nextInt(12);
 			foodLocation = new Location(xC,yC);
 			}
 		}
