@@ -112,11 +112,13 @@ public class Snake {
 		// in the same location as any other body segment
 		for (int i = 0; i < snake.size(); i++) {
 			for (int j = 0; j < snake.size(); j++) {
-				if(j != i) {
-					if (snake.get(i).getLocation() == snake.get(j).getLocation()) {
-						System.out.println("Collide");
-						return true;
-				}
+				if (j != i) {
+					if (snake.get(i).getLocation().x == snake.get(j).getLocation().x) {
+						if (snake.get(i).getLocation().y == snake.get(j).getLocation().y) {
+							System.out.println("Collide");
+							return true;
+						}
+					}
 				}
 			}
 

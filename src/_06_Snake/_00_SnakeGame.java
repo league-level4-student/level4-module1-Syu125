@@ -92,13 +92,13 @@ public class _00_SnakeGame implements ActionListener, KeyListener {
 		//   of the game. The smaller the number, the faster it goes.
 		switch (input) {
 		case 0:
-			timer.setDelay(50);
-			break;
-		case 1: 
 			timer.setDelay(100);
 			break;
-		case 2:
+		case 1: 
 			timer.setDelay(150);
+			break;
+		case 2:
+			timer.setDelay(200);
 			break;
 			
 		}
@@ -201,11 +201,15 @@ public class _00_SnakeGame implements ActionListener, KeyListener {
 		}
 		//3. if the location of the head is equal to the location of the food,
 		// 	 feed the snake and set the food location
-		if(snake.getHeadLocation() == foodLocation) {
+		
+		if(snake.getHeadLocation().x == foodLocation.x) {
+			if(snake.getHeadLocation().y == foodLocation.y) {
+				System.out.println("same");
 			snake.feed();
 			xC = r.nextInt(10);
 			yC = r.nextInt(10);
 			foodLocation = new Location(xC,yC);
+			}
 		}
 		//4. call panel.repaint();
 		panel.repaint();
